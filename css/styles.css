@@ -7,14 +7,55 @@ body{
     font-style: normal;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
 a{
     text-decoration: none;
 }
 
 ul{
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 auto;  
+}
+
+header{
+    width: 1440px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.container .navigation{
+    flex-shrink: 0;
+}
+
+.page-header .container{
+    display: flex;
+}
+
+.page-header .container .navigation{
+    display: flex;
+}
+
+ .nav-list{
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+    padding: 24px 0;
+} 
 .navigation .logo{
     color: #4D5AE5;
         font-family: "Raleway", sans-serif; 
@@ -23,19 +64,21 @@ ul{
         letter-spacing: 0.54px;
         text-transform: uppercase;
         line-height: 1.17;
+        padding: 24px 0;
 }
 
 .navigation .logo .logo-item{
     color: #2E2F42;
 }
 
-.nav-list .nav-link{
+.navigation .nav-list .nav-link{
     color: #2E2F42;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         letter-spacing: 0.32px;
         line-height: 1.5;
+        padding: 24px 0;
 }
 
 .nav-list .nav-link:hover,
@@ -45,17 +88,29 @@ ul{
 
 .contacts{
     font-style: normal;
+    margin-left: 332px;;
+}
+
+.contacts-list{
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
 }
 
 .contacts .contacts-list .contacts-link{
     color: #434455;
         font-weight: 400;
         letter-spacing: 0.32px;
+        padding: 24px 0;
 }
 
 .contacts .contacts-list .contacts-link:hover,
 .contacts .contacts-list .contacts-link:focus{
     color: #404bbf;
+}
+
+.section{
+    padding: 120px 0;
 }
 
 .page-title{
@@ -69,6 +124,8 @@ ul{
         font-weight: 700;
         line-height: 1.07;
         letter-spacing: 1.12px;
+        width: 496px;
+        margin: 68px auto 48px;
 }
 
 .button{
@@ -78,11 +135,26 @@ ul{
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
+        padding: 16px 32px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        display: flex;
+        margin: 0 auto;
+        
 }
 
 .button:hover,
 .button:focus{
     background-color: #404BBF;
+}
+
+.content h2{
+    display: none;
+}
+
+.content .content-list{
+    display: flex;
+    gap: 24px;
 }
 
 .content .content-list .content-title{
@@ -103,6 +175,11 @@ ul{
     background-color: #F4F4FD;
 }
 
+.info .info-list{
+    display: flex;
+    gap: 24px;
+}
+
 .info .info-title{
     color: #2E2F42;
         text-align: center;
@@ -111,6 +188,7 @@ ul{
         line-height: 1.11;
         letter-spacing: 0.72px;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 
 .info .info-list .info-list-item{
@@ -123,12 +201,18 @@ ul{
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.4px;
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 8px;
 }
 
 .info .info-list .profession{
     color: #434455;
         line-height: 1.5;
         letter-spacing: 0.32px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 32px;
 }
 
 .projects .project-title{
@@ -139,6 +223,13 @@ ul{
         line-height: 1.11;
         letter-spacing: 0.72px;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .projects .project-list .project-name{
@@ -147,6 +238,9 @@ ul{
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.4px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+        
 }
 
 .projects .project-list .project-text {
@@ -154,10 +248,20 @@ ul{
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.32px;
+        margin-top: 0;
+        margin-bottom: 32px;
+}
+
+.projects .project-list .project-item-box{
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .footer {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer .footer-logo {
@@ -178,4 +282,6 @@ ul{
     color: #F4F4FD;
         line-height: 1.5;
         letter-spacing: 0.32px;
+        width: 264px;
+        margin-top: 17.5px;
 }
