@@ -30,7 +30,7 @@ img{
 .container{
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 auto;  
+    padding: 0 15px;  
 }
 
 header{
@@ -48,6 +48,7 @@ header{
 
 .page-header .container .navigation{
     display: flex;
+    align-items: center;
 }
 
  .nav-list{
@@ -65,6 +66,7 @@ header{
         text-transform: uppercase;
         line-height: 1.17;
         padding: 24px 0;
+        margin-right: 76px;
 }
 
 .navigation .logo .logo-item{
@@ -115,6 +117,7 @@ header{
 
 .page-title{
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .page-title .title{
@@ -124,8 +127,8 @@ header{
         font-weight: 700;
         line-height: 1.07;
         letter-spacing: 1.12px;
-        width: 496px;
-        margin: 68px auto 48px;
+        max-width: 496px;
+        margin: 0 auto 48px;
 }
 
 .button{
@@ -138,8 +141,11 @@ header{
         padding: 16px 32px;
         border-radius: 4px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        display: flex;
+        display: block;
         margin: 0 auto;
+        min-width: 169px;
+        height: 56px;
+        border: none;
         
 }
 
@@ -148,21 +154,34 @@ header{
     background-color: #404BBF;
 }
 
-.content h2{
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .content .content-list{
     display: flex;
     gap: 24px;
 }
-
+.content .content-list .content-list-item{
+    width: calc((100% - 72px) / 4);
+}
 .content .content-list .content-title{
     color: #2E2F42;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.4px;
+        margin-bottom: 8px;
 }
 
 .content .content-list .content-text{
@@ -193,26 +212,29 @@ header{
 
 .info .info-list .info-list-item{
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.info .info-list .name{
+.info .info-list .info-list-item .info-container{
+    padding: 32px 0;
+}
+
+.info .info-list .info-list-item .info-container .name{
     color: #2E2F42;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.4px;
         text-align: center;
-        margin-top: 32px;
         margin-bottom: 8px;
 }
 
-.info .info-list .profession{
+.info .info-list .info-list-item .info-container .profession{
     color: #434455;
         line-height: 1.5;
         letter-spacing: 0.32px;
         text-align: center;
-        margin-top: 0;
-        margin-bottom: 32px;
 }
 
 .projects .project-title{
@@ -230,6 +252,11 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
+}
+
+.projects .project-list .project-item{
+    width: calc((100% - 48px) / 3);
 }
 
 .projects .project-list .project-name{
@@ -238,9 +265,7 @@ header{
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.4px;
-        margin-top: 32px;
         margin-bottom: 8px;
-        
 }
 
 .projects .project-list .project-text {
@@ -248,11 +273,10 @@ header{
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.32px;
-        margin-top: 0;
-        margin-bottom: 32px;
 }
 
 .projects .project-list .project-item-box{
+    padding: 32px 16px;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
@@ -272,6 +296,8 @@ header{
         line-height: 1.17;
         letter-spacing: 0.54px;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 
 .footer .footer-logo .footer-logo-item{
@@ -283,5 +309,4 @@ header{
         line-height: 1.5;
         letter-spacing: 0.32px;
         width: 264px;
-        margin-top: 17.5px;
 }

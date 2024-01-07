@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
-      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,30 +73,30 @@
 
       <section class="content section">
         <div class="container">
-          <h2>content</h2>
+          <h2 class="visually-hidden">content</h2>
           <ul class="content-list">
-            <li>
+            <li class="content-list-item">
               <h3 class="content-title">Strategy</h3>
               <p class="content-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="content-list-item">
               <h3 class="content-title">Punctuality</h3>
               <p class="content-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="content-list-item">
               <h3 class="content-title">Diligence</h3>
               <p class="content-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="content-list-item">
               <h3 class="content-title">Technologies</h3>
               <p class="content-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -126,8 +119,10 @@
                 height="260"
                 class="info-img"
               />
-              <h3 class="name">Mark Guerrero</h3>
-              <p class="profession">Product Designer</p>
+              <div class="info-container">
+                <h3 class="name">Mark Guerrero</h3>
+                <p class="profession">Product Designer</p>
+              </div>
             </li>
             <li class="info-list-item">
               <img
@@ -137,8 +132,10 @@
                 height="260"
                 class="info-img"
               />
-              <h3 class="name">Tom Ford</h3>
-              <p class="profession">Frontend Developer</p>
+              <div class="info-container">
+                <h3 class="name">Tom Ford</h3>
+                <p class="profession">Frontend Developer</p>
+              </div>
             </li>
             <li class="info-list-item">
               <img
@@ -148,8 +145,10 @@
                 height="260"
                 class="info-img"
               />
-              <h3 class="name">Camila Garcia</h3>
-              <p class="profession">Marketing</p>
+              <div class="info-container">
+                <h3 class="name">Camila Garcia</h3>
+                <p class="profession">Marketing</p>
+              </div>
             </li>
             <li class="info-list-item">
               <img
@@ -159,8 +158,10 @@
                 height="260"
                 class="info-img"
               />
-              <h3 class="name">Daniel Wilson</h3>
-              <p class="profession">UI Designer</p>
+              <div class="info-container">
+                <h3 class="name">Daniel Wilson</h3>
+                <p class="profession">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -170,7 +171,7 @@
         <div class="container">
           <h2 class="project-title">Our Portfolio</h2>
           <ul class="project-list">
-            <li>
+            <li class="project-item">
               <img
                 src="./images/banking-app.jpg"
                 alt="Banking App image"
@@ -183,7 +184,7 @@
                 <p class="project-text">App</p>
               </div>
             </li>
-            <li>
+            <li class="project-item">
               <img
                 src="./images/payment.jpg"
                 alt="Cashless Payment image"
@@ -196,7 +197,7 @@
                 <p class="project-text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="project-item">
               <img
                 src="./images/meditation-app.jpg"
                 alt="Meditation App image"
@@ -209,7 +210,7 @@
                 <p class="project-text">App</p>
               </div>
             </li>
-            <li>
+            <li class="project-item">
               <img
                 src="./images/taxi-service.jpg"
                 alt="Taxi Service image"
@@ -222,7 +223,7 @@
                 <p class="project-text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="project-item">
               <img
                 src="./images/screen-illustrations.jpg"
                 alt="Screen Illustrations image"
@@ -235,7 +236,7 @@
                 <p class="project-text">Design</p>
               </div>
             </li>
-            <li>
+            <li class="project-item">
               <img
                 src="./images/online-courses.jpg"
                 alt="Online Courses image"
